@@ -35,6 +35,10 @@ export const resolve = async (dtmi, expand, repo) => {
     let doc
     try {
         const req = await window.fetch(url)
+        if (req.status===404) {
+            throw new Error('404 ' + url)
+        }
+        console.log(req.status)
         doc = await req.json()
     } catch (err) {
         throw err
