@@ -1,6 +1,6 @@
 {
   "name": "@ridomin/resolver",
-  "version": "1.0.0-poc3",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -22,5 +22,5 @@
     "index.js",
     "index.d.ts"
   ],
-  "types": "index.d.ts" 
+  "types": "index.d.ts"
 }
