@@ -1,5 +1,5 @@
 // @ts-check
-import { resolve } from '../index.js'
+import { resolve } from '../dist/index.js'
 
 (async () => {
   const out = document.getElementById('output')
