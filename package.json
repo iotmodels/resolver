@@ -1,6 +1,6 @@
 {
   "name": "@ridomin/resolver",
-  "version": "1.0.0",
+  "version": "1.0.0-poc2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/iotmodels/resolver#readme",
   "files": [
-    "index.js"
-  ]
+    "index.js",
+    "index.d.ts"
+  ],
+  "types": "index.d.ts" 
 }
