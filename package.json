@@ -1,12 +1,11 @@
 {
   "name": "@ridomin/resolver",
-  "version": "0.0.3-poc3",
+  "version": "0.0.3-poc5",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "tsc index.ts --target ES2020 --module ES2020 -d --outdir ./dist",
-    "build:es5": "tsc index.ts --target ES5 --module commonjs -d -outDir es5 --lib 'ES2015, dom'"
-  },
+    "build": "tsc src/index.ts  --outdir ./dist"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iotmodels/resolver.git"
@@ -21,5 +20,5 @@
   "files": [
     "dist/*"
   ],
-  "types": "index.d.ts"
+  "types": "dist/index.d.ts"
 }

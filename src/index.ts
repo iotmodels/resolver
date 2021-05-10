@@ -15,9 +15,8 @@ const checkIdCasing = (doc: any, id: string) => {
 }
 
 export const resolve = async (dtmi: string, expand?: boolean, repo?: string): Promise<string> => {
-  if (repo == undefined) {
-    repo = 'https://devicemodels.azure.com'
-  }
+  repo = repo || 'https://devicemodels.azure.com'
+  
   let url = `${repo}${dtmiToPath(dtmi)}`
 
   if (expand === true) {
